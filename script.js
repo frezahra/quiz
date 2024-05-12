@@ -5,10 +5,22 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
-  window.location.href = "https://www.wa.link/r1qbcw";
-  question.innerHTML = "yeayy asikk km mauuuu, ayok kita mainn";
+  question.innerHTML = "yeayyyy yeayy ayok mainn";
   gif.src =
     "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
+  
+  // Tambahkan tombol baru setelah tombol "yes" ditekan
+  const newButton = document.createElement("button");
+  newButton.textContent = "klik inii!!!";
+  newButton.classList.add("new-btn");
+  newButton.addEventListener("click", () => {
+    // Tindakan yang ingin dilakukan saat tombol baru ditekan
+    console.log("Tombol baru ditekan!");
+    // Contoh tindakan tambahan:
+    window.location.href = "https://www.wa.link/qz75ji"; // Mengarahkan ke halaman web lain
+  });
+
+  wrapper.appendChild(newButton);
 });
 
 noBtn.addEventListener("mouseover", () => {
